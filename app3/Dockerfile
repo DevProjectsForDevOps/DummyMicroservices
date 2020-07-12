@@ -8,7 +8,7 @@ ENV MYSQL_PASSWORD='directdevops'
 ENV MYSQL_SERVER='localhost'
 ENV MYSQL_SERVER_PORT='3306'
 ENV MYSQL_DATABASE='test'
-EXPOSE 8080
+EXPOSE 5000
 WORKDIR $HOME_DIR
 RUN pip install -r requirements.txt
 ENTRYPOINT ["python", "app.py"]
